@@ -13,7 +13,7 @@ PROXY_SITES = [
 ]
 
 REFEREE_LIST = [
-    'http://www.google.com/',
+    # 'http://www.google.com/',
     'http://www.bing.com/',
     'http://www.baidu.com/'
 ]
@@ -25,5 +25,5 @@ DATABASE_NAME = 'weixinspider'
 TIMEOUT = 5
 
 # PROXY_REGEX = re.compile('[0-9]+(?:\.[0-9]+){3}:\d{2,4}')
-PROXY_REGEX = re.compile('([0-9]+\.){2}[0-9]+')
+PROXY_REGEX = re.compile('[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+')
 

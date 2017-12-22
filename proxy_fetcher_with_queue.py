@@ -2,6 +2,8 @@
 import re
 import queue as Queue
 import threading
+from gevent.pool import Pool
+
 
 import requests
 from mongoengine import NotUniqueError
@@ -9,6 +11,9 @@ from mongoengine import NotUniqueError
 from models import Proxy
 from config import PROXY_REGEX, PROXY_SITES
 from utils import fetch
+from remove_unavailable_proxy import check_proxy
+from gevent import monkey; monkey.patch_all()
+from search_result_with_lock import use_gevent_with_queue
 
 
 def save_proxies(url):
@@ -74,7 +79,10 @@ def use_thread_with_queue2():
     in_queue.join()
     out_queue.join()
 
+    pool = Pool(10)
+    pool.map(check_proxy, Proxy.objects.all())
     print(len(result))
+    print(Proxy.objects.count())
 
 
 def save_proxies_with_queue(queue):
@@ -101,3 +109,4 @@ def use_thread_with_queue():
 
 if __name__ == '__main__':
     use_thread_with_queue2()
+    # use_gevent_with_queue()

@@ -1,3 +1,4 @@
+# coding:utf-8
 import random
 import requests
 from fake_useragent import UserAgent

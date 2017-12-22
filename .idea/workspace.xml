@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67d0ae02-4c22-4d3f-9947-1ddd8e30da41" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proxy_fetcher.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proxy_fetcher_with_queue.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utils.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gevent_demo.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remove_unavailable_proxy.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/search_result.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/search_result_with_lock.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.py" afterPath="$PROJECT_DIR$/config.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models.py" afterPath="$PROJECT_DIR$/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proxy_fetcher_with_queue.py" afterPath="$PROJECT_DIR$/proxy_fetcher_with_queue.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils.py" afterPath="$PROJECT_DIR$/utils.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,16 +20,58 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/weixinspider$gevent.coverage" NAME="gevent Coverage Results" MODIFIED="1513677270108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/weixinspider$gevent_demo.coverage" NAME="gevent_demo Coverage Results" MODIFIED="1513677458417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/weixinspider$search_result_with_lock.coverage" NAME="search_result_with_lock Coverage Results" MODIFIED="1513843366084" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/weixinspider$utils.coverage" NAME="utils Coverage Results" MODIFIED="1513848892767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/weixinspider$Unittests_in_test_py.coverage" NAME="Unittests in test.py Coverage Results" MODIFIED="1513849585977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/weixinspider$remove_unavailable_proxy.coverage" NAME="remove_unavailable_proxy Coverage Results" MODIFIED="1513759886112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/weixinspider$proxy_fetcher_with_queue.coverage" NAME="proxy_fetcher_with_queue Coverage Results" MODIFIED="1513848230856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="360">
+              <caret line="20" column="36" lean-forward="false" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
               <folding>
-                <element signature="e#0#69#0" expanded="true" />
+                <element signature="e#0#99#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search_result_with_lock.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/search_result_with_lock.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1326">
+              <caret line="34" column="24" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <folding>
+                <element signature="e#15#44#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search_result.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/search_result.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1100">
+              <caret line="0" column="14" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding>
+                <element signature="e#15#44#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -35,7 +81,7 @@
         <entry file="file://$PROJECT_DIR$/proxy_fetcher.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="846">
-              <caret line="47" column="16" lean-forward="true" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
+              <caret line="47" column="16" lean-forward="false" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
               <folding>
                 <element signature="e#15#24#0" expanded="true" />
               </folding>
@@ -43,31 +89,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/Python34/Lib/site-packages/requests/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="830" column="8" lean-forward="false" selection-start-line="830" selection-start-column="8" selection-end-line="830" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="re.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/Python34/Lib/re.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="201" column="4" lean-forward="false" selection-start-line="201" selection-start-column="4" selection-end-line="201" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="proxy_fetcher_with_queue.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="proxy_fetcher_with_queue.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/proxy_fetcher_with_queue.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="51" column="17" lean-forward="false" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="26" />
+            <state relative-caret-position="412">
+              <caret line="112" column="0" lean-forward="true" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
               <folding>
                 <element signature="e#15#24#0" expanded="true" />
               </folding>
@@ -75,26 +101,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="queue.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/Python34/Lib/queue.py">
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="74" column="8" lean-forward="false" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
+            <state relative-caret-position="144">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding>
-                <element signature="e#2634#3145#0" expanded="false" />
-                <element signature="e#2634#3027#1" expanded="false" />
-                <element signature="e#3074#3145#0" expanded="false" />
+                <element signature="e#15#34#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="document.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/Python34/Lib/site-packages/mongoengine/document.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12053">
-              <caret line="725" column="8" lean-forward="false" selection-start-line="725" selection-start-column="8" selection-end-line="725" selection-end-column="8" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -102,11 +116,21 @@
       <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="376">
+              <caret line="26" column="55" lean-forward="true" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="55" />
               <folding>
-                <element signature="e#0#13#0" expanded="true" />
+                <element signature="e#15#28#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sessions.py" pinned="false" current-in-tab="false">
+        <entry file="file://C:/Python34/Lib/site-packages/requests/sessions.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="173">
+              <caret line="511" column="8" lean-forward="false" selection-start-line="511" selection-start-column="8" selection-end-line="511" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -114,9 +138,21 @@
       <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="27" column="47" lean-forward="true" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+            <state relative-caret-position="322">
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="remove_unavailable_proxy.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/remove_unavailable_proxy.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -133,6 +169,21 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>Queue</find>
+      <find>save_proxies(s)</find>
+      <find>save_proxies</find>
+      <find>save_proxies_with_queue2</find>
+      <find>put_new_page</find>
+      <find>BoundedSemaphore</find>
+      <find>re</find>
+      <find>__exit__</find>
+      <find>__init__</find>
+      <find>_find_and_load</find>
+      <find>_imp</find>
+      <find>release</find>
+      <find>soup</find>
+      <find>retry too much</find>
+      <find>img_box2</find>
+      <find>save_search_result_with_queue</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -141,11 +192,18 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/proxy_fetcher.py" />
+        <option value="$PROJECT_DIR$/gevent.py" />
         <option value="$PROJECT_DIR$/models.py" />
+        <option value="C:/Python34/Lib/importlib/_bootstrap.py" />
+        <option value="$PROJECT_DIR$/search_result.py" />
+        <option value="$PROJECT_DIR$/config.py" />
+        <option value="$PROJECT_DIR$/search_result_with_lock.py" />
+        <option value="$PROJECT_DIR$/gevent_demo.py" />
         <option value="$PROJECT_DIR$/proxy_fetcher_with_queue.py" />
         <option value="$PROJECT_DIR$/utils.py" />
-        <option value="$PROJECT_DIR$/config.py" />
-        <option value="$PROJECT_DIR$/proxy_fetcher.py" />
+        <option value="$PROJECT_DIR$/remove_unavailable_proxy.py" />
+        <option value="$PROJECT_DIR$/test.py" />
       </list>
     </option>
   </component>
@@ -156,8 +214,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2316" />
-    <option name="y" value="65" />
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -176,7 +234,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -191,6 +248,46 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="&lt; Python 3.4.4 (C:\Python34\python.exe) &gt;" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weixinspider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; Python 3.4.4 (C:\Python34\python.exe) &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site-packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weixinspider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; Python 3.4.4 (C:\Python34\python.exe) &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site-packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="requests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -242,6 +339,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -263,7 +361,99 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python tests.Unittests in test.py">
+    <configuration default="false" name="proxy_fetcher_with_queue" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="weixinspider" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/proxy_fetcher_with_queue.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="remove_unavailable_proxy" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="weixinspider" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/remove_unavailable_proxy.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="search_result_with_lock" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="weixinspider" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/search_result_with_lock.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="weixinspider" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="utils" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="weixinspider" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -361,6 +551,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -406,6 +602,22 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.proxy_fetcher_with_queue" />
+      <item index="1" class="java.lang.String" itemvalue="Python.remove_unavailable_proxy" />
+      <item index="2" class="java.lang.String" itemvalue="Python.search_result_with_lock" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in test.py" />
+      <item index="4" class="java.lang.String" itemvalue="Python.utils" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in test.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python.utils" />
+        <item index="2" class="java.lang.String" itemvalue="Python.proxy_fetcher_with_queue" />
+        <item index="3" class="java.lang.String" itemvalue="Python.search_result_with_lock" />
+        <item index="4" class="java.lang.String" itemvalue="Python.remove_unavailable_proxy" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -420,28 +632,69 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Unittests_in_test_py - 2017.12.21 at 17h 25m 46s.xml">
+      <configuration name="Unittests in test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_py - 2017.12.21 at 17h 25m 47s.xml">
+      <configuration name="Unittests in test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_py - 2017.12.21 at 17h 25m 52s.xml">
+      <configuration name="Unittests in test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_py - 2017.12.21 at 17h 28m 46s.xml">
+      <configuration name="Unittests in test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_py - 2017.12.21 at 17h 30m 13s.xml">
+      <configuration name="Unittests in test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_py - 2017.12.21 at 17h 32m 40s.xml">
+      <configuration name="Unittests in test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_py - 2017.12.21 at 17h 34m 46s.xml">
+      <configuration name="Unittests in test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_py - 2017.12.21 at 17h 42m 06s.xml">
+      <configuration name="Unittests in test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_py - 2017.12.21 at 17h 43m 55s.xml">
+      <configuration name="Unittests in test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_py - 2017.12.21 at 17h 57m 18s.xml">
+      <configuration name="Unittests in test.py" configurationId="tests" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="2316" y="65" width="1936" height="1056" extended-state="0" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15938166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36231884" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1609808" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39910814" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -453,16 +706,102 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Python34/Lib/site-packages/mongoengine/document.py">
+    <entry file="file://$PROJECT_DIR$/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12053">
-          <caret line="725" column="8" lean-forward="false" selection-start-line="725" selection-start-column="8" selection-end-line="725" selection-end-column="8" />
+        <state relative-caret-position="360">
+          <caret line="20" column="36" lean-forward="false" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#99#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search_result.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#15#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search_result_with_lock.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <folding>
+            <element signature="e#15#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proxy_fetcher.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="846">
+          <caret line="47" column="16" lean-forward="false" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
+          <folding>
+            <element signature="e#15#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python34/Lib/site-packages/scrapy/utils/datatypes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1386">
+          <caret line="82" column="8" lean-forward="false" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python34/Lib/site-packages/gevent/pool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5868">
+          <caret line="326" column="8" lean-forward="false" selection-start-line="326" selection-start-column="8" selection-end-line="326" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/remove_unavailable_proxy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="20" />
+          <folding>
+            <element signature="e#15#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proxy_fetcher_with_queue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="11" />
+          <folding>
+            <element signature="e#15#24#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -482,52 +821,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="47" lean-forward="true" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#69#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proxy_fetcher.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="846">
-          <caret line="47" column="16" lean-forward="true" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
-          <folding>
-            <element signature="e#15#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="26" lean-forward="false" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python34/Lib/queue.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
@@ -540,12 +833,338 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/proxy_fetcher_with_queue.py">
+    <entry file="file://C:/Python34/Lib/site-packages/mongoengine/queryset/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="51" column="17" lean-forward="false" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="26" />
+        <state relative-caret-position="192">
+          <caret line="1160" column="8" lean-forward="false" selection-start-line="1160" selection-start-column="8" selection-end-line="1160" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python34/Lib/site-packages/scrapy/utils/datatypes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1386">
+          <caret line="82" column="8" lean-forward="false" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python34/Lib/site-packages/mongoengine/document.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="260" column="8" lean-forward="false" selection-start-line="260" selection-start-column="8" selection-end-line="260" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python34/Lib/site-packages/gevent/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python34/Lib/site-packages/gevent/queue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="71" column="8" lean-forward="false" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python34/Lib/site-packages/gevent/pool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="650" column="8" lean-forward="false" selection-start-line="650" selection-start-column="8" selection-end-line="650" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python34/Lib/importlib/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#604#673#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python34/Lib/importlib/_bootstrap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1333">
+          <caret line="2364" column="23" lean-forward="false" selection-start-line="2364" selection-start-column="23" selection-end-line="2364" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python34/Lib/site-packages/gevent/monkey.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="669">
+          <caret line="579" column="4" lean-forward="false" selection-start-line="579" selection-start-column="4" selection-end-line="579" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python34/Lib/site-packages/bs4/element.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="801" column="23" lean-forward="false" selection-start-line="801" selection-start-column="23" selection-end-line="801" selection-end-column="23" />
+          <folding>
+            <element signature="e#29189#59114#0" expanded="false" />
+            <element signature="e#29444#31218#0" expanded="false" />
+            <element signature="e#29556#29712#0" expanded="false" />
+            <element signature="e#29556#29620#0" expanded="false" />
+            <element signature="e#30027#30197#0" expanded="false" />
+            <element signature="e#30344#30563#0" expanded="false" />
+            <element signature="e#30418#30509#0" expanded="false" />
+            <element signature="e#30619#30680#0" expanded="false" />
+            <element signature="e#31049#31158#0" expanded="false" />
+            <element signature="e#31301#31794#0" expanded="false" />
+            <element signature="e#31301#31435#1" expanded="false" />
+            <element signature="e#31850#32492#0" expanded="false" />
+            <element signature="e#31850#32423#1" expanded="false" />
+            <element signature="e#32582#33150#0" expanded="false" />
+            <element signature="e#32582#32957#1" expanded="false" />
+            <element signature="e#33209#33267#0" expanded="false" />
+            <element signature="e#33350#33975#0" expanded="false" />
+            <element signature="e#33350#33549#1" expanded="false" />
+            <element signature="e#33606#33975#0" expanded="false" />
+            <element signature="e#33845#33946#0" expanded="false" />
+            <element signature="e#34069#34132#0" expanded="false" />
+            <element signature="e#34242#34431#0" expanded="false" />
+            <element signature="e#34242#34328#1" expanded="false" />
+            <element signature="e#34359#34430#0" expanded="false" />
+            <element signature="e#34519#34755#0" expanded="false" />
+            <element signature="e#34654#34755#0" expanded="false" />
+            <element signature="e#34803#35194#0" expanded="false" />
+            <element signature="e#34803#34889#1" expanded="false" />
+            <element signature="e#34924#35101#0" expanded="false" />
+            <element signature="e#34973#35101#0" expanded="false" />
+            <element signature="e#35128#35194#0" expanded="false" />
+            <element signature="e#35234#35565#0" expanded="false" />
+            <element signature="e#35234#35399#1" expanded="false" />
+            <element signature="e#35462#35507#0" expanded="false" />
+            <element signature="e#35613#35800#0" expanded="false" />
+            <element signature="e#35613#35756#1" expanded="false" />
+            <element signature="e#35839#35863#0" expanded="false" />
+            <element signature="e#35897#35924#0" expanded="false" />
+            <element signature="e#35966#36116#0" expanded="false" />
+            <element signature="e#36150#36235#0" expanded="false" />
+            <element signature="e#36268#36362#0" expanded="false" />
+            <element signature="e#36403#36428#0" expanded="false" />
+            <element signature="e#36462#36529#0" expanded="false" />
+            <element signature="e#36578#36691#0" expanded="false" />
+            <element signature="e#36733#36828#0" expanded="false" />
+            <element signature="e#36879#37091#0" expanded="false" />
+            <element signature="e#36879#37045#1" expanded="false" />
+            <element signature="e#37133#37741#0" expanded="false" />
+            <element signature="e#37241#37484#0" expanded="false" />
+            <element signature="e#37780#38385#0" expanded="false" />
+            <element signature="e#38303#38365#0" expanded="false" />
+            <element signature="e#38424#38553#0" expanded="false" />
+            <element signature="e#38614#39006#0" expanded="false" />
+            <element signature="e#38679#38770#0" expanded="false" />
+            <element signature="e#38797#39006#0" expanded="false" />
+            <element signature="e#38797#38861#0" expanded="false" />
+            <element signature="e#39043#39063#0" expanded="false" />
+            <element signature="e#39096#39184#0" expanded="false" />
+            <element signature="e#39403#39578#0" expanded="false" />
+            <element signature="e#39403#39458#0" expanded="false" />
+            <element signature="e#39638#39806#0" expanded="false" />
+            <element signature="e#39951#43387#0" expanded="false" />
+            <element signature="e#39951#40375#1" expanded="false" />
+            <element signature="e#40385#40443#0" expanded="false" />
+            <element signature="e#40686#41496#0" expanded="false" />
+            <element signature="e#40746#41496#0" expanded="false" />
+            <element signature="e#40838#41458#0" expanded="false" />
+            <element signature="e#41987#42054#0" expanded="false" />
+            <element signature="e#42241#42303#0" expanded="false" />
+            <element signature="e#42330#43370#0" expanded="false" />
+            <element signature="e#42507#42661#0" expanded="false" />
+            <element signature="e#42507#42559#0" expanded="false" />
+            <element signature="e#43151#43343#0" expanded="false" />
+            <element signature="e#43151#43203#0" expanded="false" />
+            <element signature="e#43457#43617#0" expanded="false" />
+            <element signature="e#43787#45425#0" expanded="false" />
+            <element signature="e#43787#44423#1" expanded="false" />
+            <element signature="e#44432#44490#0" expanded="false" />
+            <element signature="e#44779#45399#0" expanded="false" />
+            <element signature="e#44940#45036#0" expanded="false" />
+            <element signature="e#45175#45399#0" expanded="false" />
+            <element signature="e#45557#46035#0" expanded="false" />
+            <element signature="e#45557#45918#1" expanded="false" />
+            <element signature="e#46205#46349#0" expanded="false" />
+            <element signature="e#46469#46689#0" expanded="false" />
+            <element signature="e#46831#47485#0" expanded="false" />
+            <element signature="e#46831#47306#1" expanded="false" />
+            <element signature="e#47626#47750#0" expanded="false" />
+            <element signature="e#47801#48051#0" expanded="false" />
+            <element signature="e#47989#48045#0" expanded="false" />
+            <element signature="e#48233#48409#0" expanded="false" />
+            <element signature="e#48490#58606#0" expanded="false" />
+            <element signature="e#48654#49234#0" expanded="false" />
+            <element signature="e#48740#49207#0" expanded="false" />
+            <element signature="e#49050#49128#0" expanded="false" />
+            <element signature="e#49373#49468#0" expanded="false" />
+            <element signature="e#49619#58311#0" expanded="false" />
+            <element signature="e#49753#49957#0" expanded="false" />
+            <element signature="e#50141#50199#0" expanded="false" />
+            <element signature="e#50473#50637#0" expanded="false" />
+            <element signature="e#50686#50885#0" expanded="false" />
+            <element signature="e#50812#50848#0" expanded="false" />
+            <element signature="e#50934#51210#0" expanded="false" />
+            <element signature="e#51119#51170#0" expanded="false" />
+            <element signature="e#51299#53061#0" expanded="false" />
+            <element signature="e#51424#51517#0" expanded="false" />
+            <element signature="e#51699#51759#0" expanded="false" />
+            <element signature="e#51926#52901#0" expanded="false" />
+            <element signature="e#52040#52175#0" expanded="false" />
+            <element signature="e#52241#52340#0" expanded="false" />
+            <element signature="e#52408#52831#0" expanded="false" />
+            <element signature="e#52469#52542#0" expanded="false" />
+            <element signature="e#52630#52831#0" expanded="false" />
+            <element signature="e#52944#53061#0" expanded="false" />
+            <element signature="e#53110#53168#0" expanded="false" />
+            <element signature="e#53216#53409#0" expanded="false" />
+            <element signature="e#53216#53266#0" expanded="false" />
+            <element signature="e#53457#53648#0" expanded="false" />
+            <element signature="e#53457#53507#0" expanded="false" />
+            <element signature="e#53696#54014#0" expanded="false" />
+            <element signature="e#53696#53747#0" expanded="false" />
+            <element signature="e#53916#53949#0" expanded="false" />
+            <element signature="e#54080#54131#0" expanded="false" />
+            <element signature="e#54166#54256#0" expanded="false" />
+            <element signature="e#54319#55485#0" expanded="false" />
+            <element signature="e#54319#54372#0" expanded="false" />
+            <element signature="e#54900#55425#0" expanded="false" />
+            <element signature="e#54947#55077#0" expanded="false" />
+            <element signature="e#55186#55342#0" expanded="false" />
+            <element signature="e#55549#56706#0" expanded="false" />
+            <element signature="e#55549#55596#0" expanded="false" />
+            <element signature="e#55758#55960#0" expanded="false" />
+            <element signature="e#56020#56609#0" expanded="false" />
+            <element signature="e#56020#56069#0" expanded="false" />
+            <element signature="e#56252#56534#0" expanded="false" />
+            <element signature="e#56310#56534#0" expanded="false" />
+            <element signature="e#56868#58268#0" expanded="false" />
+            <element signature="e#56911#57015#0" expanded="false" />
+            <element signature="e#57100#58268#0" expanded="false" />
+            <element signature="e#57333#57596#0" expanded="false" />
+            <element signature="e#57468#57596#0" expanded="false" />
+            <element signature="e#57468#57513#0" expanded="false" />
+            <element signature="e#57671#58129#0" expanded="false" />
+            <element signature="e#57885#58129#0" expanded="false" />
+            <element signature="e#57885#57930#0" expanded="false" />
+            <element signature="e#58462#58575#0" expanded="false" />
+            <element signature="e#58690#58710#0" expanded="false" />
+            <element signature="e#58759#58782#0" expanded="false" />
+            <element signature="e#58820#59112#0" expanded="false" />
+            <element signature="e#58820#58977#1" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gevent_demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="36" lean-forward="false" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#99#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proxy_fetcher.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="846">
+          <caret line="47" column="16" lean-forward="false" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
           <folding>
             <element signature="e#15#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python34/Lib/site-packages/requests/sessions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="511" column="8" lean-forward="false" selection-start-line="511" selection-start-column="8" selection-end-line="511" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proxy_fetcher_with_queue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="112" column="0" lean-forward="true" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+          <folding>
+            <element signature="e#15#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/remove_unavailable_proxy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="26" column="55" lean-forward="true" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="55" />
+          <folding>
+            <element signature="e#15#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search_result_with_lock.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1326">
+          <caret line="34" column="24" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <element signature="e#15#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search_result.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1100">
+          <caret line="0" column="14" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#15#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#15#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
