@@ -79,6 +79,7 @@ def use_thread_with_queue2():
     in_queue.join()
     out_queue.join()
 
+    import pdb; pdb.set_trace()
     pool = Pool(10)
     pool.map(check_proxy, Proxy.objects.all())
     print(len(result))
