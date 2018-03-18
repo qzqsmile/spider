@@ -10,7 +10,7 @@ from mongoengine import NotUniqueError
 
 from models import Proxy
 from config import PROXY_REGEX, PROXY_SITES
-from utils import fetch
+from utils import fetch, get_ip_address
 from remove_unavailable_proxy import check_proxy
 from gevent import monkey; monkey.patch_all()
 from search_result_with_lock import use_gevent_with_queue
@@ -19,10 +19,14 @@ from search_result_with_lock import use_gevent_with_queue
 def save_proxies(url):
     proxies = []
     try:
-        r = fetch(url)
+        # if url == 'http://www.kuaidaili.com/free':
+        #     import pdb;
+        #     pdb.set_trace()
+        res = requests.get(url)
+
     except requests.exceptions.RequestException:
         return False
-    addresses = re.findall(PROXY_REGEX, r.text)
+    addresses = re.findall(PROXY_REGEX, res.text)
     for address in addresses:
         proxy = Proxy(address=address)
         try:
@@ -41,6 +45,7 @@ def cleanup():
 def save_proxies_with_queue2(in_queue, out_queue):
     while True:
         url = in_queue.get()
+        # import pdb; pdb.set_trace()
         rs = save_proxies(url)
         out_queue.put(rs)
         in_queue.task_done()  # 队列完成发送信号
@@ -56,33 +61,50 @@ def append_result(out_queue, result):
 
 def use_thread_with_queue2():
     cleanup()
-    in_queue = Queue.Queue()
-    out_queue = Queue.Queue()
+    # in_queue = Queue.Queue()
+    # out_queue = Queue.Queue()
+    #
+    # for i in range(5):
+    #     t = threading.Thread(target=save_proxies_with_queue2,
+    #                          args=(in_queue, out_queue))
+    #     t.setDaemon(True)
+    #     t.start()
+    #
+    # for url in PROXY_SITES:
+    #     in_queue.put(url)
+    #
+    # result = []
+    #
+    # for i in range(5):
+    #     t = threading.Thread(target=append_result,
+    #                          args=(out_queue, result))
+    #     t.setDaemon(True)
+    #     t.start()
+    #
+    # in_queue.join()
+    # out_queue.join()
 
-    for i in range(5):
-        t = threading.Thread(target=save_proxies_with_queue2,
-                             args=(in_queue, out_queue))
-        t.setDaemon(True)
-        t.start()
+    # addresses = [{'ip': '222.76.147.1', 'port': '34815'}, {'ip': '123.169.6.230', 'port': '41617'},
+    #              {'ip': '117.95.55.58', 'port': '41502'}, {'ip': '123.53.133.116', 'port': '38926'},
+    #              {'ip': '59.58.242.240', 'port': '22280'}, {'ip': '113.93.100.31', 'port': '29347'},
+    #              {'ip': '182.39.19.233', 'port': '21550'}, {'ip': '61.143.22.124', 'port': '33944'},
+    #              {'ip': '115.226.143.201', 'port': '36074'}, {'ip': '218.73.131.207', 'port': '40926'}]
 
-    for url in PROXY_SITES:
-        in_queue.put(url)
+    mogu_key = ""
+    res = requests.get(mogu_key)
+    addresses = res.json()['msg']
 
-    result = []
+    for address in addresses:
+        proxy = Proxy(address=address['ip']+':'+address['port'])
+        try:
+            proxy.save()
+        except NotUniqueError:
+            pass
 
-    for i in range(5):
-        t = threading.Thread(target=append_result,
-                             args=(out_queue, result))
-        t.setDaemon(True)
-        t.start()
 
-    in_queue.join()
-    out_queue.join()
-
-    import pdb; pdb.set_trace()
     pool = Pool(10)
     pool.map(check_proxy, Proxy.objects.all())
-    print(len(result))
+    print(len(addresses))
     print(Proxy.objects.count())
 
 
@@ -110,4 +132,4 @@ def use_thread_with_queue():
 
 if __name__ == '__main__':
     use_thread_with_queue2()
-    # use_gevent_with_queue()
+    use_gevent_with_queue()

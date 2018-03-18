@@ -3,13 +3,15 @@ import re
 PROXY_SITES = [
     # 'http://cn-proxy.com',
     'http://www.xicidaili.com',
-    'http://www.kuaidaili.com/free',
+    # 'http://www.kuaidaili.com/free',
+    'https://www.kuaidaili.com/free/intr',
     'http://www.proxylists.net/?HTTP',
-    # www.youdaili.net的地址随着日期不断更新
-    # 'http://www.youdaili.net/Daili/http/4562.html',
-    'http://www.kuaidaili.com',
-    'http://proxy.mimvp.com',
+    'http://31f.cn',
+    'http://www.coobobo.com',
+    'http://www.kxdaili.com'
+    # 'http://proxy.mimvp.com',
 ]
+
 
 REFEREE_LIST = [
     # 'http://www.google.com/',
