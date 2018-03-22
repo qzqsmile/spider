@@ -8,9 +8,8 @@ from gevent.pool import Pool
 import requests
 from mongoengine import NotUniqueError
 
-from models import Proxy
+from models import Proxy,Article
 from config import PROXY_REGEX, PROXY_SITES
-from utils import fetch, get_ip_address
 from remove_unavailable_proxy import check_proxy
 from gevent import monkey; monkey.patch_all()
 from search_result_with_lock import use_gevent_with_queue
@@ -40,6 +39,7 @@ def save_proxies(url):
 
 def cleanup():
     Proxy.drop_collection()
+    Article.drop_collection()
 
 
 def save_proxies_with_queue2(in_queue, out_queue):
@@ -84,15 +84,11 @@ def use_thread_with_queue2():
     # in_queue.join()
     # out_queue.join()
 
-    # addresses = [{'ip': '222.76.147.1', 'port': '34815'}, {'ip': '123.169.6.230', 'port': '41617'},
-    #              {'ip': '117.95.55.58', 'port': '41502'}, {'ip': '123.53.133.116', 'port': '38926'},
-    #              {'ip': '59.58.242.240', 'port': '22280'}, {'ip': '113.93.100.31', 'port': '29347'},
-    #              {'ip': '182.39.19.233', 'port': '21550'}, {'ip': '61.143.22.124', 'port': '33944'},
-    #              {'ip': '115.226.143.201', 'port': '36074'}, {'ip': '218.73.131.207', 'port': '40926'}]
+    addresses = []
 
-    mogu_key = ""
-    res = requests.get(mogu_key)
-    addresses = res.json()['msg']
+    # mogu_key = ""
+    # res = requests.get(mogu_key)
+    # addresses = res.json()['msg']
 
     for address in addresses:
         proxy = Proxy(address=address['ip']+':'+address['port'])
